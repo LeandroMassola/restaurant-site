@@ -1,0 +1,56 @@
+{
+    "Starters": [
+        {   "id": 1,
+            "name": "Bellagio Bruschetta:",
+            "description": "Grilled sourdough bread, vine-ripened tomatoes, fresh basil, garlic, extra virgin olive oil, and a drizzle of balsamic reduction."
+        },
+        {   "id": 2,
+            "name": "Grilled Halloumi with Pomegranate Glaze:",
+            "description": "Seared halloumi cheese, mixed greens, pomegranate seeds, roasted pine nuts, and a honey-pomegranate glaze."
+        },
+        {   "id": 3,
+            "name": "Octopus Carpaccio:",
+            "description": "Thinly sliced octopus, lemon zest, capers, olive oil, sea salt, and microgreens."
+        },
+        {   "id": 4,
+            "name": "Feta-Stuffed Peppers:",
+            "description": "Roasted red bell peppers filled with herbed feta, garlic, black olives, and fresh oregano."
+        }
+    ],
+    "Main Courses": [
+        {   "id": 1,
+            "name": "Seafood Risotto:",
+            "description": "Arborio rice, mussels, clams, prawns, squid, garlic, saffron, and a rich tomato broth."
+        },
+        {   "id": 2,
+            "name": "Lamb Moussaka:",
+            "description": "Layered minced lamb, eggplant, zucchini, tomatoes, cinnamon-spiced béchamel, and a touch of grated pecorino cheese."
+        },
+        {   "id": 3,
+            "name": "Mediterranean Sea Bass:",
+            "description": "Grilled sea bass, lemon-caper butter sauce, sautéed spinach, cherry tomatoes, and a side of rosemary-infused potatoes."
+        },
+        {   "id": 4,
+            "name": "Porcini Mushroom Tagliatelle:",
+            "description": "Fresh tagliatelle pasta, wild porcini mushrooms, garlic, white wine, parsley, and Parmesan cheese."
+        }
+    ],
+    "Desserts": [
+        {   "id": 1,
+            "name": "Limoncello Tiramisu:",
+            "description": "Layers of sponge cake soaked in Limoncello, mascarpone cream, lemon zest, and a dusting of cocoa powder."
+        },
+        {   "id": 2,
+            "name": "Panna Cotta with Berries:",
+            "description": "Vanilla panna cotta, fresh mixed berries, and a tangy berry coulis."
+        },
+        {   "id": 3,
+            "name": "Olive Oil Cake:",
+            "description": "Moist olive oil cake, orange zest, almonds, and a side of whipped cream."
+        },
+        {   "id": 4,
+            "name": "Affogato al Caffè:",
+            "description": "Vanilla gelato, shot of espresso, and a sprinkle of dark chocolate shavings."
+        }
+    ]
+}
