@@ -8,7 +8,7 @@ export default function Reserves() {
     async function handleSendReserve(e) {
         e.preventDefault();
 
-        const response = await fetch(import.meta.env.VITE_URL_CALL, {
+        const response = await fetch(process.env.VITE_URL_CALL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)
