@@ -1,0 +1,145 @@
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 10;
+}
+
+.nav__cont {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+
+.contMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    color: white;
+}
+
+.nav__contMenuList {
+    display: none;
+}
+
+.btnBurguerMenu {
+    font-size: 15rem;
+}
+
+.linkReserves {
+    text-decoration: none;
+    width: 33%;
+    font-size: 2.8rem;
+    color: white;
+    margin-left: 10%;
+}
+
+.contLogo {
+    width: 25%;
+    
+}
+
+.logoImg {
+    width: 50%;
+    margin-left: 45%;
+}
+
+/* Opened burguer menu */
+
+.nav__openMenuCont {
+    position: relative;
+    z-index: 100;
+    width: 33%;
+}
+
+.menuList {
+    padding-left: 13%;
+    margin-top: 25%;
+    position: relative;
+}
+
+.menuItems {
+    list-style: none;
+    margin-bottom: 20%;
+    margin-top: 55%;
+    font-size: 1.5rem;
+}
+
+.iconsMenu {
+    font-size: 3rem;
+}
+
+.menuBtns {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+
+.btnCloseMenu {
+    position: relative;
+    left: -50%;
+}
+
+/*Media queries medium size*/
+@media (min-width: 577px) and (max-width: 768px) {
+
+}
+@media (min-width: 769px) { 
+    .linkReserves, .nav__openMenuCont, .contMenu {
+        display: none;
+    }
+
+    .menuListLarge, .menuBtnsLarge, .menuItemsLarge {
+        display: block;
+    }
+
+    .nav__cont {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav__contMenuList {
+        display: flex;
+        flex-flow: row;
+        width: 70%;
+    }
+
+    .menuListLarge {
+        display: flex;
+        flex-flow: row;
+        gap: 10%;
+        margin: 0;
+        padding: 5%;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menuItemsLarge {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1201px) {
+    .logoImg {
+        width: 25%;
+    }
+
+    .nav__cont {
+        flex-flow: row-reverse;
+    }
+
+    .menuListLarge {
+        padding: 5% 5%;
+    }
+
+    .menuBtns {
+        font-weight: 400;
+    }
+}

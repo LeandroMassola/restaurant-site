@@ -1,0 +1,141 @@
+
+.mainContact {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15% 5%;
+}
+
+.mapContStyle {
+    width: 100%;
+    height: 25vh;
+    margin-top: 1%;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    width: 80%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.titleContact {
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.formContact {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+
+}
+
+.contField {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.nameField {
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+    font-weight: 600;
+    font-size: 0.87rem;
+}
+
+.inputField {
+    margin-top: 5%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 2% 5%;
+    font-size: 0.87rem;
+    width: 75%;
+}
+
+.inputField:focus {
+    outline: white solid 2px;
+    box-shadow: 0px 0px 15px 0px white;
+}
+
+/*BUTTONS*/
+
+.contBtns {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.submitBtn, .resetBtn {
+    padding: 5% 10%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+}
+
+.resetBtn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #CCCCCC;
+}
+
+.containerContactData {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    color: white;
+}
+
+.listData {
+    list-style: none;
+    padding: 0;
+}
+
+.itemData {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.iconData {
+    font-size: 1.5rem;
+    margin-right: 5%;
+}
+
+.textContact {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+@media(min-width: 577px) {
+    .mapContStyle {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 1201px) {
+    .mainContact {
+        padding-top: 0;
+    }
+
+    .container  {
+        padding: 25%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

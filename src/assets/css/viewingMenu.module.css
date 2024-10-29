@@ -1,0 +1,75 @@
+.main {
+    flex-flow: column;
+    align-items: center;
+    color: white;
+    padding-top: 35%;
+}
+
+.mainContainer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.lineBreaks {
+    margin-top: 15%;
+    width: 80%;
+    color: white;
+}
+.lineBreakTwo {
+    width: 70%;
+    color: white;
+
+}
+
+.contListCategories {
+    margin-top: 15%;
+    padding-bottom: 5%;
+}
+
+.listCategories {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-left: 0;
+}
+
+.itemList {
+    list-style: none;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.linksList {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+
+.activeLink {
+    text-decoration: underline ;
+    font-size: 1.3rem;
+}
+
+
+@media (min-width: 993px) {
+    .main {
+        padding-top: 20%;
+    }
+
+    .contListCategories {
+        margin-top: 0%;
+        padding-bottom: 0%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .itemList {
+        font-size: 2rem;
+    }
+}

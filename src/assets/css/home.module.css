@@ -1,0 +1,129 @@
+/* body {
+    background-image:  url('../images/edits/bg-home-opacity.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: rgb(0, 85, 106);
+} */
+
+
+.mainHome {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding-top: 15%;
+}
+
+.mainHeader {
+    margin-top: 30%;
+    color: white;
+    text-align: center;
+}
+
+
+/* .contArrowMenu {
+    transform: rotate(90deg);
+    padding-left: 10%;
+    height: 50vh;
+} */
+
+.arrowSvg {
+    fill: none;
+    stroke: white;
+    stroke-width: 0.3px;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 150;
+    animation: draw 3s ease-in-out forwards;
+    
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0;
+    }
+}
+
+.textArrowMenu {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.breakHr {
+    width: 75%;
+    margin-top: 45%;
+}
+
+.sectionReviews {
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.258);
+    margin-top: 70%;
+    margin-bottom: 45%;
+    padding-top: 20%;
+}
+
+
+
+.containerReviews {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
+    margin-bottom: 25%;
+}
+
+
+/*Media queries medium size*/
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .mainHome {
+        padding-top: 15%;
+    }
+
+    .contArrowMenu {
+        text-align: center;
+    }
+
+    .sectionReviews {
+        width: 75%;
+    }
+}
+
+@media (min-width: 769px) { 
+    .mainHeader {
+        margin-top: 25%;
+    }
+
+    .sectionReviews {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .mainHome {
+        padding-top: 5%;
+    }
+
+    .mainHeader {
+        font-size: 3rem;
+    }
+
+    .textArrowMenu {
+        font-size: 2rem;
+    }
+
+    .arrowHome {
+        font-size: 2rem;
+    }
+}

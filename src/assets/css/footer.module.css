@@ -1,0 +1,38 @@
+.footerCont {
+    background: rgba(255, 255, 255, 0.252);
+    color: white;
+}
+
+
+.contFindUs {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.headerFIndUs {
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+.footerList {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+}
+
+.icons {
+    list-style: none;
+}
+
+
+.rightsFooter {
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 5%;
+}

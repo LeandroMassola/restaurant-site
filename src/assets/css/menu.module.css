@@ -1,0 +1,90 @@
+/* #root {
+    background-image: url('../images/pexels-rachel-claire-5490900.jpg');
+} */
+.mainMenu {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    padding-top: 35%;
+    padding-left: 0;
+    background-color: rgba(0, 85, 106, 0.100);
+}
+
+.contArrowMenu {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 10%;
+}
+
+.arrowTo {
+    color: white;
+    width: 20%;
+    transform: translateX(0%);
+}
+
+.linksMenu {
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    width: 25%;
+    font-size: 1.5rem;
+
+}
+
+/*Media queries medium size*/
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .mainMenu {
+        padding-top: 20%;
+    }
+}
+
+@media (min-width: 769px) {
+    .mainMenu {
+        padding-top: 15%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .mainMenu {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15%;
+    }
+    .contMenu {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    .linksMenu {
+        font-size: 2.5rem;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        border-bottom-width: 100%;
+        transition: border-bottom 0.7s ease-in;
+        width: fit-content;
+        text-align: start;
+    }
+
+    
+
+    .arrowTo{
+        cursor: pointer;
+    }
+
+    .arrowToMainCourses {
+        width: 16.3%;
+    }
+
+    .linksMenu:hover {
+        border-bottom: 2px white solid;
+        
+    }
+}
