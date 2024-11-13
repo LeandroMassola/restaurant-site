@@ -13,7 +13,7 @@ export default function Review() {
 
     let apiKey = import.meta.env.VITE_API_KEY
     const placeName = 'Moll de Bellagio, Puerto Pollença'
-    const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${encodeURIComponent(placeName)}&inputtype=textquery&fields=place_id&key=${apiKey}`;
+    const url = `/api/maps?input=Moll%20de%20Bellagio%2C%20Puerto%20Pollen%C3%A7a`;
     let position = {
         lat: 39.90868626880527,
         lng: 3.0836899493710392
