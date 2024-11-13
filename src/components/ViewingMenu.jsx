@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom'
-import styles from '../assets/css/viewingMenu.module.css'
+import styles from '../../public/assets/css/viewingMenu.module.css'
 import { useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import Card from './Card.jsx'

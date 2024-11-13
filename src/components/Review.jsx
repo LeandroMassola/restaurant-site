@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from '../assets/css/reviews.module.css'
+import styles from '../../public/assets/css/reviews.module.css'
 import { IoStar } from "react-icons/io5";
 import { GiLaurels } from "react-icons/gi";
 
