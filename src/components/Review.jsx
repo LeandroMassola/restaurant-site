@@ -41,7 +41,7 @@ export default function Review() {
 
     async function getReviews(id) {
 
-        let urlDetailPlace = `api/maps/getReview?input=${id}`
+        let urlDetailPlace = `/getReview:${id}`
 
         try {
             const response = await fetch(urlDetailPlace, {
