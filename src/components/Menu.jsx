@@ -1,4 +1,4 @@
-import styles from '../../public/assets/css/menu.module.css'
+import styles from '/assets/css/menu.module.css'
 import {animated, useSpring} from 'react-spring'
 import { useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react';
