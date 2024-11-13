@@ -41,7 +41,7 @@ export default function Review() {
 
     async function getReviews(id) {
 
-        let urlDetailPlace = `https://resto-back-ukhl.onrender.com//getReview/:${id}`
+        let urlDetailPlace = `https://resto-back-ukhl.onrender.com/getReview/:${id}`
 
         try {
             const response = await fetch(urlDetailPlace, {
