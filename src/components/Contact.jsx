@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from '../../public/assets/css/contact.module.css'
+import styles from '/assets/css/contact.module.css'
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api'
 import { FaWhatsapp } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";

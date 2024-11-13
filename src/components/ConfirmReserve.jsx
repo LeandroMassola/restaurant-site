@@ -1,5 +1,5 @@
 import { useSearchParams } from "react-router-dom";
-import styles from '../../public/assets/css/confirmReserve.module.css'
+import styles from '/assets/css/confirmReserve.module.css'
 import { useState, useEffect } from "react";
 
 export default function ConfirmReserve() {

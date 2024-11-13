@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from '../../public/assets/css/card.module.css'
+import styles from '/assets/css/card.module.css'
 
 
 export default function Card({stateCategory}) {

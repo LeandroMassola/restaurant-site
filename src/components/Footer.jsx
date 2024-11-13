@@ -1,4 +1,4 @@
-import styles from '../../public/assets/css/footer.module.css'
+import styles from '/assets/css/footer.module.css'
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { SiTripadvisor  } from "react-icons/si";
 import { IoLogoWhatsapp } from "react-icons/io";
