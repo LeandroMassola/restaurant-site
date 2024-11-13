@@ -11,9 +11,9 @@ export default function Review() {
     const [reviews, setReviews] = useState(null);
     const [error, setError] = useState(null);
 
-    let apiKey = process.env.VITE_API_KEY
+    let apiKey = import.meta.env.VITE_API_KEY
     const placeName = 'Moll de Bellagio, Puerto Pollença'
-    const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${encodeURIComponent(placeName)}&inputtype=textquery&fields=place_id&key=${apiKey}`;
+    const url = `/api/maps/api/place/findplacefromtext/json?input=${encodeURIComponent(placeName)}&inputtype=textquery&fields=place_id&key=${apiKey}`;
     let position = {
         lat: 39.90868626880527,
         lng: 3.0836899493710392
@@ -21,7 +21,10 @@ export default function Review() {
     
     async function getIdPlace() {
         try {
-            const response = await fetch(url)
+            const response = await fetch(url, {
+                method: 'GET',
+                headers: { 'Content-Type': 'application/json' }
+            })
             const placeDetails = await response.json();
             const idPlace = placeDetails.candidates[0].place_id; 
             console.log(idPlace)
@@ -41,7 +44,10 @@ export default function Review() {
         let urlDetailPlace = `api/maps/api/place/details/json?place_id=${id}&fields=reviews,name&key=${apiKey}`
 
         try {
-            const response = await fetch(urlDetailPlace);
+            const response = await fetch(urlDetailPlace, {
+                method: 'GET',
+                headers: { 'Content-Type': 'application/json' }
+            });
             const placeDetails = await response.json();
             console.log(placeDetails)
             const reviews = placeDetails.result.reviews

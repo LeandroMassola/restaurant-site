@@ -8,7 +8,7 @@ export default function Footer() {
     return(
         <footer className={styles.footerCont}>
             <div className={styles.contFindUs}>
-                <h5 className={styles.headerFIndUs}>Find Us!</h5>
+                <h5 className={styles.headerFIndUs}><u>Find Us!</u></h5>
                 <ul className={styles.footerList}>
                     <li className={`${styles.icons} ${styles.igIcon}`}>
                         <a><PiInstagramLogoFill/></a>

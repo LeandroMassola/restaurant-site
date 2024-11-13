@@ -3,7 +3,7 @@ import Lottie from 'react-lottie'
 import arrowDraw from '../assets/animations/arrowDraw.json'
 import { useEffect, useRef, useState } from 'react'
 import Review from './Review'
-import { animated, useSpring } from 'react-spring'
+import { animated, useSpring, easings } from 'react-spring'
 import { useOnScreen } from '../hooks/hookUseOnScreen.jsx'
 import { LiaLongArrowAltDownSolid } from "react-icons/lia";
 
@@ -66,27 +66,71 @@ export default function Home() {
         autoPlay: false,
     }
 
+    const fadeTitle = useSpring({
+        from: {
+            opacity: 0
+        },
+        to: {
+            opacity: 1
+        },
+        delay: 500,
+        config: {
+            velocity: -50,
+            duration: 1000,
+        }
+    })
+    const fadeLottie = useSpring({
+        from: {
+            opacity: 0
+        },
+        to: {
+            opacity: 1
+        },
+        delay: 2000,
+        config: {
+            velocity: -250,
+        }
+    })
+    const fadeLinkMenu = useSpring({
+        from: {
+            opacity: 0
+        },
+        to: {
+            opacity: 1
+        },
+        delay: 2000,
+        config: {
+            velocity: -50,
+            duration: 1000,
+        }
+    })
+
 
     return (
         <animated.main className={styles.mainHome}>
-            <animated.h1 ref={mainHeader} style={fadeHeader} className={styles.mainHeader}>Welcome to Moll de Bellagio</animated.h1>
+            <animated.h1 ref={mainHeader} style={fadeTitle} className={styles.mainHeader}>Welcome to Moll de Bellagio</animated.h1>
             <Lottie
-                lottieRef={arrowAnimation}
-                className= {styles.arrowHome}
-                options={configAnimation}
-                width={120}
-                height={120}
-                style={{rotate:'90deg', position:'static', margin:'0', opacity: isContentLoaded ? '1' : '0', transition: '1s' }}
-            />
+                    lottieRef={arrowAnimation}
+                    className= {styles.arrowHome}
+                    options={configAnimation}
+                    width={120}
+                    height={120}
+                    style={{rotate:'90deg', position:'static', margin:'0', opacity: isContentLoaded ? '1' : '0', transition: '1s' }}
+                />
+            {/* <animated.div style={fadeLottie}>
+                
+            </animated.div> */}
+            
             {/* <animated.div style={fadeArrow} rel={arrowAnimation} className={styles.contArrowMenu}>
                 <LiaLongArrowAltDownSolid size={100} className={styles.arrowSvg}/>
             </animated.div> */}
-            <animated.a ref={textArrow} style={fadeText} href='menu' className={styles.textArrowMenu}>View Menu</animated.a>
+            <animated.a ref={textArrow} style={fadeLinkMenu} href='menu' className={styles.textArrowMenu}>View Menu</animated.a>
 
             <animated.hr style={fadeBreak} ref={breakHome} className={styles.breakHr} />
             <animated.section style={fadeReviews} ref={reviews} className={styles.sectionReviews}>
-
+            <h3 className={styles.headerReviews}>Our clients recommend us!</h3>
                 <div className={styles.containerReviews}>
+                    
                     <Review />
                 </div>
             </animated.section>

@@ -72,7 +72,15 @@
     padding-top: 20%;
 }
 
+.headerReviews {
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 90%;
+    text-decoration: solid underline;
+    text-underline-offset: 0.5rem;
 
+}
 
 .containerReviews {
     width: 100%;
@@ -110,9 +118,27 @@
     }
 }
 
+@media(min-width: 1025px) {
+
+
+    .breakHr {
+        margin-top: 20%;
+        margin-bottom: 0;
+    }
+
+    .sectionReviews {
+        margin-top: 25%;
+    }
+
+    .headerReviews {
+        margin-bottom: 20%;
+        font-size: 2.5rem;
+    }
+}
+
 @media (min-width: 1201px) {
     .mainHome {
-        padding-top: 5%;
+        padding-top: 0%;
     }
 
     .mainHeader {
@@ -127,3 +153,5 @@
         font-size: 2rem;
     }
 }
+
+

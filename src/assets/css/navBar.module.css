@@ -37,12 +37,11 @@
     width: 33%;
     font-size: 2.8rem;
     color: white;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 
 .contLogo {
-    width: 25%;
-    
+    width: 33%;
 }
 
 .logoImg {
@@ -87,10 +86,29 @@
 }
 
 /*Media queries medium size*/
+
+
 @media (min-width: 577px) and (max-width: 768px) {
+    .btnBurguerMenu {
+        width: 55%;
+    }
+
+    .logoImg {
+        width: 40%;
+    }
+
+    .btnCloseMenu {
+        width: 55%;
+    }
+
 
 }
 @media (min-width: 769px) { 
+
+    .logoImg {
+        width: 30%;
+    }
+
     .linkReserves, .nav__openMenuCont, .contMenu {
         display: none;
     }
@@ -126,6 +144,25 @@
     }
 }
 
+@media(min-width: 1025px) {
+
+    .menuListLarge {
+        padding: 0;
+    }
+
+    .menuItemsLarge {
+        width: 15%;
+    }
+
+    .menuBtnsLarge {
+        transition: all 0.7s ;
+    }
+
+    .menuBtnsLarge:hover {
+        font-size: 1.8rem;
+    }
+}
+
 @media (min-width: 1201px) {
     .logoImg {
         width: 25%;
@@ -135,9 +172,9 @@
         flex-flow: row-reverse;
     }
 
-    .menuListLarge {
+    /* .menuListLarge {
         padding: 5% 5%;
-    }
+    } */
 
     .menuBtns {
         font-weight: 400;

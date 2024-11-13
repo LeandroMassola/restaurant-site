@@ -10,6 +10,7 @@ import About from './components/About'
 import Reserves from './components/Reserves'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ConfirmReserve from './components/ConfirmReserve'
 
 function App() {
 
@@ -44,6 +45,9 @@ function App() {
           return ("url('src/assets/images/edits/bg-reserves.png')");
 
         case '/contact':
+          return ("url('src/assets/images/edits/bg-contact.png')");
+
+        case '/confirmReserve':
           return ("url('src/assets/images/edits/bg-contact.png')");
 
         default:
@@ -104,6 +108,7 @@ function App() {
             <Route path='/about' element={<About/>}/>
             <Route path='/reserves' element={<Reserves/>}/>
             <Route path='/contact' element={<Contact/>}/>
+            <Route path='/confirmReserve' element={<ConfirmReserve/>}/>
           </Routes>
           <Footer />
 
