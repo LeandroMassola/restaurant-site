@@ -13,7 +13,7 @@ export default function Review() {
 
     let apiKey = import.meta.env.VITE_API_KEY
     const placeName = 'Moll de Bellagio, Puerto Pollença'
-    const url = `/api/maps?input=Moll%20de%20Bellagio%2C%20Puerto%20Pollen%C3%A7a`;
+    const url = `https://resto-back-ukhl.onrender.com/api/maps?input=Moll%20de%20Bellagio%2C%20Puerto%20Pollen%C3%A7a`;
     let position = {
         lat: 39.90868626880527,
         lng: 3.0836899493710392
@@ -41,7 +41,7 @@ export default function Review() {
 
     async function getReviews(id) {
 
-        let urlDetailPlace = `/getReview:${id}`
+        let urlDetailPlace = `https://resto-back-ukhl.onrender.com//getReview/:${id}`
 
         try {
             const response = await fetch(urlDetailPlace, {
