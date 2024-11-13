@@ -49,6 +49,17 @@
     }
 }
 
+@media(min-width: 1025px) {
+
+    .linksMenu{
+        transition: all 0.7s;
+    }
+
+    .linksMenu:hover {
+        border-bottom: 2px white solid;
+    }
+}
+
 @media (min-width: 1201px) {
     .mainMenu {
         padding: 0;
@@ -56,6 +67,7 @@
         justify-content: center;
         align-items: center;
         padding-top: 15%;
+        margin-bottom: 20%;
     }
     .contMenu {
         display: flex;
@@ -83,8 +95,5 @@
         width: 16.3%;
     }
 
-    .linksMenu:hover {
-        border-bottom: 2px white solid;
-        
-    }
+    
 }

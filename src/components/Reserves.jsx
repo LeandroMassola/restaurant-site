@@ -1,25 +1,27 @@
 import { useState, useEffect } from 'react';
 import styles from '../assets/css/reserves.module.css'
-import Success from './Success';
 
 export default function Reserves() {
-    const [formData, setFormData] = useState({completeName:'', phone: '', dateTime: '', numberOfPeople: '', commentarys: '' })
+    const [formData, setFormData] = useState({completeName:'', phone: '', date: '', time:'', numberOfPeople: '', commentarys: '' })
     
     async function handleSendReserve(e) {
         e.preventDefault();
+        
 
-        const response = await fetch(process.env.VITE_URL_CALL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formData)
-        })
-
-        if (response.ok) {
-            console.log('Mensaje enviado con éxito');
-            
-        } else {
-            console.log('error al enviar el mensaje');
-            
+        try {
+            const response = await fetch(import.meta.env.VITE_URL_CALL + '/sendReserve', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            })
+    
+            if (response.ok) {
+                console.log('Mensaje enviado con éxito');
+            } else {
+                console.error('No se ha podido aceptar la reserva');
+            }
+        } catch (error) {
+            console.log('Error al enviar la confirmación:', error);
         }
     }
 
@@ -40,7 +42,8 @@ export default function Reserves() {
 
                     <div className={styles.contField}>
                         <label htmlFor="timeDate" className={styles.nameField}>Date / Time:</label>
-                        <input type="date" name='timeDate' id='timeDate' value={formData.dateTime} onChange={(e)=> setFormData({...formData, dateTime: e.target.value})} className={styles.inputField} />
+                        <input type="date" name='date' id='date' value={formData.date} onChange={(e)=> setFormData({...formData, date: e.target.value})} className={styles.inputField} />
+                        <input type="time" name='time' id='time' value={formData.time} onChange={(e)=> setFormData({...formData, time: e.target.value})} className={styles.inputField} />
                     </div>
 
                     <div className={styles.contField}>

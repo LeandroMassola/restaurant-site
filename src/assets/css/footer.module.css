@@ -36,3 +36,47 @@
     margin: 0;
     margin-top: 5%;
 }
+
+@media(min-width: 577px) {
+
+    .headerFIndUs {
+        font-size: 1.3rem;
+    }
+    .icons{
+        font-size: 1.5rem;
+    }
+}
+
+@media(min-width:1025px){
+    .headerFIndUs {
+        font-size: 1.8rem;
+    }
+
+    .icons {
+        font-size: 2rem;
+    }
+
+    .icons a {
+        cursor: pointer;
+        transition: all 0.7s;
+    }
+
+    .icons a:hover {
+        color: black;
+    }
+}
+
+@media(min-width: 1201px) {
+
+    .headerFIndUs {
+        font-size: 2rem;
+    }
+
+    .icons {
+        font-size: 2.3rem;
+    }
+
+    .rightsFooter {
+        font-size: 1rem;
+    }
+}

@@ -69,7 +69,33 @@
 }
 
 @media (min-width: 1201px) {
+
+    .main{
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20%;
+        margin-top: 5%;
+    }
+
+    .lineBreaks, .lineBreakTwo {
+        display: none;
+    }
+
+    .contListCategories {
+        width: 20%;
+        padding-right: 25%;
+        padding-left: 2%;
+        margin-left: 2%;
+        align-self: center;
+    }
+
+    .listCategories {
+    }
+
     .itemList {
         font-size: 2rem;
+        margin-bottom: 20%;
     }
 }

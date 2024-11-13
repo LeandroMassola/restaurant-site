@@ -29,7 +29,7 @@ export default function Contact() {
             <div className={styles.container}>
                 
                 <h1 className={styles.titleContact}>Contact us</h1>
-                <form className={styles.formContact} action="#" method="POST">
+                {/* <form className={styles.formContact} action="#" method="POST">
 
                     <div className={styles.contField}>
                         <label htmlFor="name" className={styles.nameField}>Complete Name:</label>
@@ -61,7 +61,7 @@ export default function Contact() {
                         </button>
                     </div>
 
-                </form>
+                </form> */}
 
             </div>
 

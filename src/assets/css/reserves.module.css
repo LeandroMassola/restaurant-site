@@ -72,7 +72,7 @@
 }
 
 .submitBtn, .resetBtn {
-    padding: 5% 10%;
+    padding: 4% 5%;
     border-radius: 5px;
     border: none;
     background-color: rgba(255, 255, 255, 0.2);
@@ -82,4 +82,48 @@
 .resetBtn {
     background-color: rgba(0, 0, 0, 0.5);
     color: #CCCCCC;
+}
+
+@media(min-width:1025px) {
+
+    
+    .submitBtn, .resetBtn {
+        transition: all 0.7s;
+        cursor: pointer;
+        padding: 3% 6%;
+    }
+
+    .submitBtn:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #CCCCCC;
+
+    }
+
+    .resetBtn:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #FFFFFF;
+
+    }
+}
+
+@media(min-width:1201px) {
+
+    .container {
+        margin-top: 5%;
+    }
+    .submitBtn, .resetBtn {
+        font-size: 1.2rem;
+    }
+    .formReserves {
+        padding: 0;
+    }
+
+    .contField {
+        width: 60%;
+        margin-top: 5%;
+    }
+
+    .contBtns {
+        margin-top: 10%;
+    }
 }
