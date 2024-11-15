@@ -100,8 +100,9 @@ function App() {
     <animated.div className={styles.mainApp} style={{...fade}} >
       
         
-          <NavBar/>
+          
           <Router>
+            <NavBar/>
             <Routes>
               <Route path='/' element={<Home/>}/>
               <Route path='/menu' element={<Menu/>}/>
@@ -111,9 +112,10 @@ function App() {
               <Route path='/contact' element={<Contact/>}/>
               <Route path='/confirmReserve' element={<ConfirmReserve/>}/>
             </Routes>
+            <Footer />
           </Router>
           
-          <Footer />
+          
 
     </animated.div>
   )
