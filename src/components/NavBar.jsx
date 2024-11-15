@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import styles from '../assets/css/NavBar.module.css'
 import { animated, useSpring } from '@react-spring/web'
 import { LuConciergeBell } from "react-icons/lu";
-import imgLogo from '../assets/images/edits/logo-bellagio-white.png'
+import imgLogo from '/images/edits/logo-bellagio-white.png'
 function NavBar() {
 
     const [isOpen, setIsOpen] = useState(false);

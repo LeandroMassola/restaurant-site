@@ -26,29 +26,29 @@ function App() {
     function getBgImage() {
       switch (location.pathname) {
         case '/':
-          return ("url('/assets/images/edits/bg-home-opacity.png')");
+          return ("url('/images/edits/bg-home-opacity.png')");
         
         case '/home':
-          return ("url('/assets/images/edits/bg-home-opacity.png')");
+          return ("url('/images/edits/bg-home-opacity.png')");
   
         case '/menu':
-          return ("url('/assets/images/edits/bg-menu-opacity.png')");
+          return ("url('/images/edits/bg-menu-opacity.png')");
 
         case '/viewingMenu':
           configBackground.height = ''
-          return ("url('/assets/images/edits/bg-reading-menu.png')");
+          return ("url('/images/edits/bg-reading-menu.png')");
         
         case '/about':
-          return ("url('/assets/images/edits/bg-about-chef.png')");
+          return ("url('/images/edits/bg-about-chef.png')");
 
         case '/reserves':
-          return ("url('/assets/images/edits/bg-reserves.png')");
+          return ("url('/images/edits/bg-reserves.png')");
 
         case '/contact':
-          return ("url('/assets/images/edits/bg-contact.png')");
+          return ("url('/images/edits/bg-contact.png')");
 
         case '/confirmReserve':
-          return ("url('/assets/images/edits/bg-contact.png')");
+          return ("url('/images/edits/bg-contact.png')");
 
         default:
           return('none');
