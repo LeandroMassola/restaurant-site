@@ -6,7 +6,7 @@ import Review from './Review'
 import { animated, useSpring, easings } from 'react-spring'
 import { useOnScreen } from '../hooks/hookUseOnScreen.jsx'
 import { LiaLongArrowAltDownSolid } from "react-icons/lia";
-import { Link } from 'react-routes'
+import { Link } from 'react-router-dom'
 
 
 export default function Home() {

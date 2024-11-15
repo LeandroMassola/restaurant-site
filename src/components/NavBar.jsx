@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-routes';
+import { Link } from 'react-router-dom';
 import styles from '../assets/css/navBar.module.css'
 import { animated, useSpring } from '@react-spring/web'
 import { LuConciergeBell } from "react-icons/lu";
