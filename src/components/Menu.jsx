@@ -5,8 +5,6 @@ import { useEffect, useState } from 'react';
 
 export default function Menu() {
 
-
-    
     const fadeSection = useSpring({
         from: {opacity: 0},
         to: {opacity:1},

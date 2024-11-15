@@ -101,15 +101,18 @@ function App() {
       
         
           <NavBar/>
-          <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/menu' element={<Menu/>}/>
-            <Route path='/viewingMenu' element={<ViewingMenu imgLoaded: imgLoaded/>}/>
-            <Route path='/about' element={<About/>}/>
-            <Route path='/reserves' element={<Reserves/>}/>
-            <Route path='/contact' element={<Contact/>}/>
-            <Route path='/confirmReserve' element={<ConfirmReserve/>}/>
-          </Routes>
+          <Router>
+            <Routes>
+              <Route path='/' element={<Home/>}/>
+              <Route path='/menu' element={<Menu/>}/>
+              <Route path='/viewingMenu' element={<ViewingMenu imgLoaded: imgLoaded/>}/>
+              <Route path='/about' element={<About/>}/>
+              <Route path='/reserves' element={<Reserves/>}/>
+              <Route path='/contact' element={<Contact/>}/>
+              <Route path='/confirmReserve' element={<ConfirmReserve/>}/>
+            </Routes>
+          </Router>
+          
           <Footer />
 
     </animated.div>
