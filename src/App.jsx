@@ -99,7 +99,6 @@ function App() {
   return (
 
     <BrowserRouter>
-      <animated.div className={styles.mainApp} style={{...fade}} >
         <NavBar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
@@ -111,7 +110,6 @@ function App() {
           <Route path='/confirmReserve' element={<ConfirmReserve/>}/>
         </Routes>
         <Footer />
-      </animated.div>
     </BrowserRouter>
   )
 }
