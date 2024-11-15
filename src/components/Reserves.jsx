@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styles from '/assets/css/reserves.module.css'
+import styles from '../assets/css/reserves.module.css'
 
 export default function Reserves() {
     const [formData, setFormData] = useState({completeName:'', phone: '', date: '', time:'', numberOfPeople: '', commentarys: '' })

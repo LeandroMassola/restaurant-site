@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from '/assets/css/about.module.css'
+import styles from '../assets/css/about.module.css'
 import { useSpring, animated } from "react-spring";
 
 export default function About() {

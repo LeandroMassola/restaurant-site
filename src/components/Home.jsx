@@ -1,6 +1,6 @@
-import styles from '/assets/css/home.module.css'
+import styles from '../assets/css/home.module.css'
 import Lottie from 'react-lottie'
-import arrowDraw from 'assets/animations/arrowDraw.json'
+import arrowDraw from '../assets/animations/arrowDraw.json'
 import { useEffect, useRef, useState } from 'react'
 import Review from './Review'
 import { animated, useSpring, easings } from 'react-spring'
