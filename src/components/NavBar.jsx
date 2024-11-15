@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-routes';
 import styles from '../assets/css/navBar.module.css'
 import { animated, useSpring } from '@react-spring/web'
 import { LuConciergeBell } from "react-icons/lu";
@@ -60,10 +61,10 @@ function NavBar() {
                 </div>
                 <div className={styles.nav__contMenuList}>
                     <ul className={`${styles.menuList} ${styles.menuListLarge}`}>
-                        <li className={`${styles.menuItems} ${styles.menuItemsLarge}`}><a className={`${styles.menuBtns} ${styles.menuBtnsLarge}`} href="/menu">Menu</a></li>
-                        <li className={`${styles.menuItems} ${styles.menuItemsLarge}`}><a className={`${styles.menuBtns} ${styles.menuBtnsLarge}`} href="/about">About us</a></li>
-                        <li className={`${styles.menuItems} ${styles.menuItemsLarge}`}><a className={`${styles.menuBtns} ${styles.menuBtnsLarge}`} href="/contact">Contact</a></li>
-                        <li className={`${styles.menuItems} ${styles.menuItemsLarge}`}><a className={`${styles.menuBtns} ${styles.menuBtnsLarge}`} href="/reserves">Reserves</a></li>                    
+                        <li className={`${styles.menuItems} ${styles.menuItemsLarge}`}><Link className={`${styles.menuBtns} ${styles.menuBtnsLarge}`} to="/menu">Menu</Link></li>
+                        <li className={`${styles.menuItems} ${styles.menuItemsLarge}`}><Link className={`${styles.menuBtns} ${styles.menuBtnsLarge}`} to="/about">About us</Link></li>
+                        <li className={`${styles.menuItems} ${styles.menuItemsLarge}`}><Link className={`${styles.menuBtns} ${styles.menuBtnsLarge}`} to="/contact">Contact</Link></li>
+                        <li className={`${styles.menuItems} ${styles.menuItemsLarge}`}><Link className={`${styles.menuBtns} ${styles.menuBtnsLarge}`} to="/reserves">Reserves</Link></li>                    
                     </ul>
                 </div>
                 <a className={styles.linkReserves} href="/reserves"><LuConciergeBell className={styles.iconReserves} style={{width: '33%', fontSize:'2.8rem', position: 'relative', left: '11%'}}/></a>
@@ -78,10 +79,10 @@ function NavBar() {
             className={styles.nav__openMenuCont}
             style={menuAnimation}>
                 <ul className={styles.menuList}>
-                    <li className={styles.menuItems}><a className={styles.menuBtns} href="/menu">Menu</a></li>
-                    <li className={styles.menuItems}><a className={styles.menuBtns} href="/about">About us</a></li>
-                    <li className={styles.menuItems}><a className={styles.menuBtns} href="/contact">Contact</a></li>
-                    <li className={styles.menuItems}><a className={styles.menuBtns} href="/reserves">Reserves</a></li>                    
+                    <li className={styles.menuItems}><Link className={styles.menuBtns} to="/menu">Menu</Link></li>
+                    <li className={styles.menuItems}><Link className={styles.menuBtns} to="/about">About us</Link></li>
+                    <li className={styles.menuItems}><Link className={styles.menuBtns} to="/contact">Contact</Link></li>
+                    <li className={styles.menuItems}><Link className={styles.menuBtns} to="/reserves">Reserves</Link></li>                    
                 </ul>
             </animated.div>
         </nav>

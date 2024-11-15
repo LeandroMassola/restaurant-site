@@ -6,6 +6,7 @@ import Review from './Review'
 import { animated, useSpring, easings } from 'react-spring'
 import { useOnScreen } from '../hooks/hookUseOnScreen.jsx'
 import { LiaLongArrowAltDownSolid } from "react-icons/lia";
+import { Link } from 'react-routes'
 
 
 export default function Home() {
@@ -124,7 +125,7 @@ export default function Home() {
             {/* <animated.div style={fadeArrow} rel={arrowAnimation} className={styles.contArrowMenu}>
                 <LiaLongArrowAltDownSolid size={100} className={styles.arrowSvg}/>
             </animated.div> */}
-            <animated.a ref={textArrow} style={fadeLinkMenu} href='menu' className={styles.textArrowMenu}>View Menu</animated.a>
+            <animated.Link ref={textArrow} style={fadeLinkMenu} to='/menu' className={styles.textArrowMenu}>View Menu</animated.Link>
 
             <animated.hr style={fadeBreak} ref={breakHome} className={styles.breakHr} />
             <animated.section style={fadeReviews} ref={reviews} className={styles.sectionReviews}>
