@@ -1,5 +1,5 @@
 import styles from './app.module.css'
-import {BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom'
+import {BrowserRouter, Routes, Route, useLocation} from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { animated, useSpring } from 'react-spring'
 import NavBar from './components/NavBar'
@@ -97,27 +97,22 @@ function App() {
 
   const fade = useSpring({ opacity: imgBg ? 1 : 0, from: { opacity: 0 }, config: { duration: 700 } });
   return (
-    <animated.div className={styles.mainApp} style={{...fade}} >
-      
-        
-          
-          <Router>
-            <NavBar/>
-            <Routes>
-              <Route path='/' element={<Home/>}/>
-              <Route path='/menu' element={<Menu/>}/>
-              <Route path='/viewingMenu' element={<ViewingMenu imgLoaded: imgLoaded/>}/>
-              <Route path='/about' element={<About/>}/>
-              <Route path='/reserves' element={<Reserves/>}/>
-              <Route path='/contact' element={<Contact/>}/>
-              <Route path='/confirmReserve' element={<ConfirmReserve/>}/>
-            </Routes>
-            <Footer />
-          </Router>
-          
-          
 
-    </animated.div>
+    <BrowserRouter>
+      <animated.div className={styles.mainApp} style={{...fade}} >
+        <NavBar/>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/menu' element={<Menu/>}/>
+          <Route path='/viewingMenu' element={<ViewingMenu imgLoaded: imgLoaded/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/reserves' element={<Reserves/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/confirmReserve' element={<ConfirmReserve/>}/>
+        </Routes>
+        <Footer />
+      </animated.div>
+    </BrowserRouter>
   )
 }
 
