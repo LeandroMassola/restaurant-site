@@ -125,7 +125,7 @@ export default function Home() {
             {/* <animated.div style={fadeArrow} rel={arrowAnimation} className={styles.contArrowMenu}>
                 <LiaLongArrowAltDownSolid size={100} className={styles.arrowSvg}/>
             </animated.div> */}
-            <animated.Link ref={textArrow} style={fadeLinkMenu} to='/menu' className={styles.textArrowMenu}>View Menu</animated.Link>
+            <Link ref={textArrow} style={fadeLinkMenu} to='/menu' className={styles.textArrowMenu}>View Menu</Link>
 
             <animated.hr style={fadeBreak} ref={breakHome} className={styles.breakHr} />
             <animated.section style={fadeReviews} ref={reviews} className={styles.sectionReviews}>
