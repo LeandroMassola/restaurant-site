@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import styles from '../assets/css/NavBar.module.css'
+import styles from '../assets/css/navBar.module.css'
 import { animated, useSpring } from '@react-spring/web'
 import { LuConciergeBell } from "react-icons/lu";
 import imgLogo from '/images/edits/logo-bellagio-white.png'
