@@ -78,7 +78,13 @@ export default function ConfirmReserve() {
                     <br />
                     el día: 
                     <br />
-                    <u><strong>{date}</strong></u>?</p>
+                    <u><strong>{date}</strong></u>
+                    <br />
+                    a la hora:
+                    <br />
+                    <u><strong>{time}</strong></u>
+                    ?
+                    </p>
                 <div className={styles.contBtns}>
                     <button className={styles.btnConfirmation} onClick={()=>handleSubmit('confirmada')} name="confirm" type="submit">Confirmar</button>
                     <button className={styles.btnDeny} onClick={()=>handleSubmit('rechazada')} name="deny" type="submit">Denegar</button>
