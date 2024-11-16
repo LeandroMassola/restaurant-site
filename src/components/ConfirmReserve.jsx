@@ -19,7 +19,7 @@ export default function ConfirmReserve() {
 
     async function getData() {
         try {
-            const response = await fetch(`${import.meta.env.VITE_URL_CALL}/confirmReserve/${reservationId}`)
+            const response = await fetch(`${import.meta.env.VITE_URL_CALL}/confirmReserve/:${reservationId}`)
             console.log(response);
             
             if(response.ok) {
