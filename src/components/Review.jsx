@@ -64,13 +64,14 @@ export default function Review() {
 
     useEffect(()=> {
         getIdPlace()
-    }, [])
-
-    useEffect(()=> {
         if(placeId) {
             getReviews(placeId)
         }
     }, [placeId])
+
+    /* useEffect(()=> {
+        
+    }, []) */
     return(
         <div className={styles.contReviews}>
             
