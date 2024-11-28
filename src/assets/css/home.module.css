@@ -21,6 +21,8 @@
     margin-top: 30%;
     color: white;
     text-align: center;
+    margin-bottom: 20%;
+    padding-bottom:5% ;
 }
 
 
@@ -47,11 +49,20 @@
     }
 }
 
+.playerLottie {
+    width: 15%;
+    height: 10vh;
+    transform: rotate(50deg) ;
+    margin-bottom: 2%;
+}
+
 .textArrowMenu {
     color: white;
     text-align: center;
     text-decoration: none;
     font-size: 1.4rem;
+    margin-top: 20%;
+    padding-top: 5%;
 }
 
 .breakHr {
@@ -63,13 +74,9 @@
     display: flex;
     flex-flow: column;
     width: 50%;
-    height: 75vh;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.258);
-    margin-top: 70%;
     margin-bottom: 45%;
-    padding-top: 20%;
 }
 
 .headerReviews {
@@ -84,10 +91,11 @@
 
 .containerReviews {
     width: 100%;
-    display: flex;
     justify-content: center;
     margin-top: 0%;
     margin-bottom: 25%;
+    background-color: rgba(255, 255, 255, 0.258);
+
 }
 
 
@@ -97,6 +105,16 @@
 @media (min-width: 577px) and (max-width: 768px) {
     .mainHome {
         padding-top: 15%;
+    }
+
+    .mainHeader {
+        margin-bottom: 10%;
+        padding-bottom: 5%;
+    }
+
+    .textArrowMenu {
+        margin-top: 10%;
+        padding-top: 5%;
     }
 
     .contArrowMenu {
@@ -109,8 +127,18 @@
 }
 
 @media (min-width: 769px) { 
+
+
+
     .mainHeader {
-        margin-top: 25%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding-bottom: 5%;
+    }
+
+    .textArrowMenu {
+        margin-top: 10%;
+        padding-top: 5%;
     }
 
     .sectionReviews {
@@ -120,7 +148,15 @@
 
 @media(min-width: 1025px) {
 
+    .mainHeader {
+        margin-bottom: 7%;
+        padding-bottom: 3.5%;
+    }
 
+    .textArrowMenu {
+        margin-top: 7%;
+        padding-top: 3.5%;
+    }
     .breakHr {
         margin-top: 20%;
         margin-bottom: 0;
@@ -138,7 +174,7 @@
 
 @media (min-width: 1201px) {
     .mainHome {
-        padding-top: 0%;
+        margin-top: 5%;
     }
 
     .mainHeader {

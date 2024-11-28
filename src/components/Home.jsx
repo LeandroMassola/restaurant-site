@@ -1,5 +1,8 @@
 import styles from '../assets/css/home.module.css'
-import Lottie from 'react-lottie'
+import {Lottie} from 'react-lottie'
+import {Player} from '@lottiefiles/react-lottie-player'
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import Xarrow from 'react-xarrows'
 import arrowDraw from '../assets/animations/arrowDraw.json'
 import { useEffect, useRef, useState } from 'react'
 import Review from './Review'
@@ -92,6 +95,20 @@ export default function Home() {
             velocity: -250,
         }
     })
+
+    const fadeArrow = useSpring({
+        from: {
+            opacity: 0
+        },
+        to: {
+            opacity: 1
+        },
+        delay: 2000,
+        config: {
+            velocity: -250,
+        }
+    })
+
     const fadeLinkMenu = useSpring({
         from: {
             opacity: 0
@@ -109,23 +126,31 @@ export default function Home() {
 
     return (
         <animated.main className={styles.mainHome}>
-            <animated.h1 ref={mainHeader} style={fadeTitle} className={styles.mainHeader}>Welcome to Moll de Bellagio</animated.h1>
-            <Lottie
+            <animated.h1 id='mainHeader' ref={mainHeader} /* style={fadeTitle} */ className={styles.mainHeader}>Welcome to Moll de Bellagio</animated.h1>
+            
+            
+            {/* <DotLottieReact
+                src="https://lottie.host/b67522ff-c3e6-4194-8deb-ed9f1c73371e/zNFWFO2Agt.lottie"
+                autoplay
+                className={styles.playerLottie}
+                style={{...fadeLottie}}
+            /> */}
+
+            {/* <Lottie
                     lottieRef={arrowAnimation}
                     className= {styles.arrowHome}
                     options={configAnimation}
                     width={120}
                     height={120}
-                    style={{rotate:'90deg', position:'static', margin:'0', opacity: isContentLoaded ? '1' : '0', transition: '1s' }}
-                />
-            {/* <animated.div style={fadeLottie}>
-                
-            </animated.div> */}
+                    style={{rotate:'90deg', position:'static', margin:'0', transition: '1s' }}
+            /> */}
             
             {/* <animated.div style={fadeArrow} rel={arrowAnimation} className={styles.contArrowMenu}>
                 <LiaLongArrowAltDownSolid size={100} className={styles.arrowSvg}/>
             </animated.div> */}
-            <Link ref={textArrow} style={fadeLinkMenu} to='/menu' className={styles.textArrowMenu}>View Menu</Link>
+            <Link id='textMenu' ref={textArrow} /* style={fadeLinkMenu} */ to='/menu' className={styles.textArrowMenu}>View Menu</Link>
+
+            <Xarrow color="white"  strokeWidth={3}  headSize={6} animateDrawing={true} showHead={true} className={styles.playerLottie} start='mainHeader' end='textMenu'/>
 
             <animated.hr style={fadeBreak} ref={breakHome} className={styles.breakHr} />
             <animated.section style={fadeReviews} ref={reviews} className={styles.sectionReviews}>
